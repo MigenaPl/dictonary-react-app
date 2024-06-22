@@ -13,7 +13,25 @@ export default function App() {
           <Dictionary />
         </main>
         <footer className="App-footer">
-          <small>Coded by SheCodes</small>
+          <small>
+            Open-Source Code on{" "}
+            <a
+              href="https://github.com/MigenaPl/dictonary-react-app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>{" "}
+            by Migena Plenishti, hosted on{" "}
+            <a
+              href="https://dictionary-app-by-mp.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Netlify
+            </a>
+            .
+          </small>
         </footer>
       </div>
     </div>
