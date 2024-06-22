@@ -22,7 +22,15 @@ export default function App() {
             >
               GitHub
             </a>{" "}
-            by Migena Plenishti, hosted on{" "}
+            by{" "}
+            <a
+              href="https://migena-plenishti-portfolio.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Migena Plenishti
+            </a>
+            , hosted on{" "}
             <a
               href="https://dictionary-app-by-mp.netlify.app/"
               target="_blank"
