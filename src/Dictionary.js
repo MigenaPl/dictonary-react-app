@@ -18,9 +18,8 @@ export default function Dictionary(props) {
     setPhotos(response.data.photos);
   }
 
-  function search() {
+  function search(event) {
     event.preventDefault();
-
     const apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=9da03fffet062oac34bd00790f54faa4`;
     axios.get(apiUrl).then(handleDictionResponse);
 
@@ -28,7 +27,9 @@ export default function Dictionary(props) {
       "563492ad6f91700001000001fdd29f0808df42bd90c33f42e128fa89";
     let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
     let headers = { Authorization: `${pexelsApiKey}` };
-    axios.get(pexelsApiUrl, { headers: headers }).then(handlePexelsResponse);
+    axios
+      .get(pexelsApiUrl, { headers: headers })
+      .onfulfilled(handlePexelsResponse);
   }
 
   function handleSubmit(event) {
